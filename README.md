@@ -7,7 +7,7 @@
 **Registration and login for [Folia 1.21.11](https://github.com/PaperMC/Folia).** VRegister provides account registration, BCrypt password hashing, SQLite account storage and login-session management. Supported Java clients can register or sign in using Minecraft's native Dialog interface.
 
 > [!IMPORTANT]
-> **Commercial plugin.** VRegister is proprietary software by **VACK STUDIO**. This public repository contains product information only; the source and installable JAR are distributed privately under written authorization.
+> **Commercial plugin.** VRegister is proprietary software by **VACK STUDIO**. This repository contains product information and selected configuration resources. The Java implementation and installable JAR remain privately distributed under written authorization.
 
 ## Player authentication
 
@@ -77,6 +77,16 @@ VRegister uses **BCrypt** for password hashes and **SQLite** to store accounts, 
 The VRegister 2.2.0 build and **6 unit tests** passed in the reported staging build. The patched FastLoginPlusFolia build passed **163 upstream tests and 5 bridge tests**, with 2 upstream tests skipped.
 
 The Register and Login Dialogs and automatic-login message have been observed in a Java client. Complete end-to-end authentication coverage—particularly Premium verification, legacy clients and optional Floodgate/Bedrock integration—remains pending.
+
+## Configuration and commands
+
+VRegister 2.2.0 provides a configurable authentication system. Its [plugin manifest](src/main/resources/plugin.yml) and [default settings](src/main/resources/config.yml) describe the declared dependencies, commands and server options.
+
+- [Configuration reference](docs/CONFIGURATION.md) — authentication settings, limits and messages.
+- [Commands and permissions](docs/COMMANDS.md) — administrator and legacy-client commands.
+- [Installation requirements](docs/INSTALLATION.md) — Folia and matching FastLoginPlusFolia integration.
+
+The Java implementation, matching FastLoginPlusFolia bridge, and installable JAR are distributed privately.
 
 ## Availability
 

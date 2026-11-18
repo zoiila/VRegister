@@ -1,0 +1,41 @@
+# VRegister authentication settings.
+settings:
+  minimum-password-length: 6
+  dialog-reopen-delay-seconds: 2
+  failed-login-cooldown-seconds: 3
+  maximum-failed-login-attempts: 5
+  kick-after-maximum-failed-attempts: true
+  send-chat-authentication-messages: false
+  minimum-dialog-client-version: "1.21.6"
+  # Modern clients remain outside the world in the CONFIGURATION phase until
+  # the VRegister Dialog is completed successfully.
+  pre-world-authentication-timeout-seconds: 120
+  maximum-concurrent-pre-world-authentications: 100
+  # An UNKNOWN FastLoginPlus result is denied immediately; it cannot safely
+  # become a cracked registration attempt.
+  block-chat-before-authentication: true
+  block-movement-before-authentication: true
+
+messages:
+  dialog-register-title: "<dark_purple>VRegister"
+  dialog-register-body: "<gray>Create a password to protect this account."
+  dialog-login-title: "<dark_purple>VRegister"
+  dialog-login-body: "<gray>Enter your password to continue."
+  dialog-incorrect-password: "<red>Incorrect password."
+  outdated-client-kick: "<red>This server requires Minecraft 1.21.6 or newer for Dialog authentication."
+  verification-timeout-kick: "&cAuthentication verification did not complete. Please rejoin."
+  authentication-timeout-kick: "<red>Authentication timed out. Please reconnect."
+  premium-name-protected-kick: "<red>This Premium username is protected."
+  legacy-register-instructions: "&7Your client does not support pre-world Dialogs. Use &f/register <password> <password>"
+  legacy-login-instructions: "&7Your client does not support pre-world Dialogs. Use &f/login <password>"
+  legacy-register-usage: "&cUsage: /register <password> <password>"
+  legacy-login-usage: "&cUsage: /login <password>"
+  legacy-register-success: "&aRegistration complete."
+  legacy-login-success: "&aLogin complete."
+  legacy-passwords-do-not-match: "&cPasswords do not match."
+  legacy-password-too-short: "&cPassword must contain at least %minimum% characters."
+  legacy-account-exists: "&cThis account already exists. Use /login."
+  legacy-incorrect-password: "&cIncorrect password."
+  legacy-login-cooldown: "&cPlease wait before trying again."
+  legacy-service-error: "&cAuthentication service error."
+  legacy-already-authenticated: "&7You are already authenticated."
