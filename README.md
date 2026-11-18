@@ -96,7 +96,7 @@ VRegister is **paid software**. Source access and installable builds are distrib
 
 <details>
 <summary><strong>License &amp; rights — VACK STUDIO</strong></summary>
-
+ 
 Copyright © 2026 VACK STUDIO. All rights reserved.
 
 The plugin, documentation and original artwork are proprietary. Redistribution, modification or publication requires prior written authorization. See the full [LICENSE](LICENSE).
