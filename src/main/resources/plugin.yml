@@ -1,0 +1,23 @@
+name: VRegister
+version: 2.2.0
+main: com.vackstudio.vregister.VRegisterPlugin
+api-version: '1.21'
+author: Vack Studio
+depend: [FastLoginPlus]
+softdepend: [floodgate, ViaVersion]
+folia-supported: true
+commands:
+  vregister:
+    description: VRegister administration.
+    usage: /vregister <reset|reload> [player]
+  register:
+    description: Legacy-client VRegister registration fallback.
+    usage: /register <password> <password>
+    aliases: [reg]
+  login:
+    description: Legacy-client VRegister login fallback.
+    usage: /login <password>
+permissions:
+  vregister.admin:
+    description: Allows VRegister administrative commands.
+    default: op
