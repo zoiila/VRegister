@@ -2,14 +2,17 @@
   <img src="assets/vregister-01-hero.svg" alt="VRegister by VACK Studio, with the VACK logo and Mini Zoiila mascot" width="100%" />
 </p>
 
-# VRegister
+# VRegister <img src="assets/emoji/mini-zoiila-wave.png" alt="Mini Zoiila waving" width="29" height="29" />
 
-**Registration and login for [Folia 1.21.11](https://github.com/PaperMC/Folia).** VRegister provides account registration, BCrypt password hashing, SQLite account storage and login-session management. Supported Java clients can register or sign in using Minecraft's native Dialog interface.
+**Account registration and login for [Folia 1.21.11](https://github.com/PaperMC/Folia).** VRegister gives supported Java players native Minecraft Register and Login Dialogs, BCrypt password hashing, SQLite account storage and managed login sessions.
 
 > [!IMPORTANT]
 > **Commercial plugin.** VRegister is proprietary software by **VACK STUDIO**. This public repository contains product information only; the source and installable JAR are distributed privately under written authorization.
 
-## Player authentication
+## How authentication works
+
+**Which sign-in flow will a player see?** <img src="assets/emoji/mini-zoiila-thinking.png" alt="Mini Zoiila thinking" width="24" height="24" />
+
 
 <p align="center">
   <img src="assets/vregister-02-client-routes.svg" alt="VRegister connection paths for Java, verified Premium accounts and Floodgate Bedrock clients" width="100%" />
@@ -26,7 +29,7 @@
   </tr>
 </table>
 
-## In-game experience
+## In-game dialogs
 
 <table>
   <tr>
@@ -70,17 +73,19 @@ VRegister uses **BCrypt** for password hashes and **SQLite** to store accounts, 
 | Bridge dependency | [ProtocolLib](https://github.com/dmulloy2/ProtocolLib); **5.4.0** used in staging |
 | Optional integrations | [Floodgate](https://github.com/GeyserMC/Floodgate) and [ViaVersion](https://github.com/ViaVersion/ViaVersion) |
 
-**Compatibility note:** The VRegister-specific FastLoginPlusFolia bridge contains integration methods unavailable in the standard 0.7.0 builds; an unmodified upstream JAR is not an interchangeable replacement.
+### Notes
+
+The VRegister-specific FastLoginPlusFolia bridge includes configuration-phase authentication support missing from stock 0.7.0 builds. Install the matching bridge and verify the dependencies before allowing players to connect. <img src="assets/emoji/mini-zoiila-teacher.png" alt="Mini Zoiila teaching" width="24" height="24" />
 
 ### Verification status
 
 The VRegister 2.2.0 build and **6 unit tests** passed in the reported staging build. The patched FastLoginPlusFolia build passed **163 upstream tests and 5 bridge tests**, with 2 upstream tests skipped.
 
-The Register and Login Dialogs and automatic-login message have been observed in a Java client. Complete end-to-end authentication coverage—particularly Premium verification, legacy clients and optional Floodgate/Bedrock integration—remains pending.
+The Register and Login Dialogs and automatic-login message have been observed in a Java client. Full authentication acceptance, including Premium verification, legacy clients and optional Floodgate/Bedrock support, is still pending.
 
 ## Availability
 
-VRegister is **paid software**. Source access and installable builds are distributed privately to accounts approved by VACK STUDIO. For availability and written usage terms, contact VACK STUDIO through the links below.
+VRegister is **commercial software**. Installable builds and source access are provided privately to VACK STUDIO-approved customers. For access and license terms, use the official links below.
 
 ---
 
