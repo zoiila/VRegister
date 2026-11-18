@@ -22,7 +22,7 @@ VRegister presents native registration/login dialogs to **supported cracked Java
 <p align="center">
   <a href="https://github.com/GeyserMC/Floodgate"><img src="assets/geyser-icon.png" alt="Official GeyserMC icon linking to Floodgate" width="28" height="28" /></a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/dmulloy2/ProtocolLib"><img src="assets/openjdk-mark.svg" alt="OpenJDK mark representing the Java plugin environment" width="25" height="25" /></a>
+  <a href="https://github.com/openjdk/jdk"><img src="assets/openjdk-mark.svg" alt="OpenJDK mark representing the Java plugin environment" width="25" height="25" /></a>
 </p>
 
 ## Real Minecraft screenshots
@@ -71,7 +71,7 @@ The public repository describes these functions, but does not disclose internal 
 | Java | **21 build target**; reported Java 25 project runtime |
 | Premium bridge | Private patched [FastLoginPlusFolia](https://github.com/Hayston1001/FastLoginPlus) build, `0.7.0-vregister.1-2c5808e` |
 | Bridge dependency | [ProtocolLib](https://github.com/dmulloy2/ProtocolLib) **5.4.0** in staging |
-| Optional integrations | [Floodgate](https://github.com/GeyserMC/Floodgate) and ViaVersion |
+| Optional integrations | [Floodgate](https://github.com/GeyserMC/Floodgate) and [ViaVersion](https://github.com/ViaVersion/ViaVersion) |
 | Unit tests | **6 VRegister tests passed**; **163 upstream tests and 5 bridge tests passed**, with 2 upstream skipped (reported by maintainer) |
 | Real UI captures | Register, Login and automatic-login message shown above |
 | Complete client security acceptance | **Not yet independently verified** across Premium, cracked, legacy and Bedrock clients |
