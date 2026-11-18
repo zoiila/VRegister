@@ -24,9 +24,22 @@ All VRegister claims in the banners and README come from the previous public `RE
 - [ ] Review all five banner renders on GitHub in Dark and Light, and small mobile widths.
 - [ ] Confirm authentic logo and small mascot alignment, no clipping or broken fonts.
 - [ ] Confirm legal notice identical to the original `LICENSE`.
-- [ ] Add original real-client screenshots only after privacy checks.
+- [x] Add authentic client captures after verifying no password is visible; maintain originals separately.
 - [ ] Confirm external links and selected exact version/build values with the plugin maintainer.
 - [ ] Receive user approval to merge.
 
 ## Design references
 Used the publicly documented critique and anti-AI-slop principles from `pbakaus/impeccable` for manual review; did not install or execute an unverified CLI in this repository.
+
+
+## 18 November 2026 — Real client captures and art refinements
+
+- The owner supplied the real Minecraft Java **Register Dialog**, **Login Dialog**, and the **Auto logged in** chat message. Stored two quality-optimized JPEG display copies at 720 px width and the unchanged original PNG chat snippet; original screenshots retained outside the public repo.
+- These images show client UI and the message, **not independent proof** of every Premium/cracked/legacy/Bedrock authentication path.
+- The user's artifact report established VRegister 2.2.0 and patched FastLoginPlusFolia compilation and unit tests; these are documented as reported evidence, not re-run here.
+- Moved the original embedded Zoiila mini mascot up to sit closer to the hero card top edge. Authentic skin and logo pixels unchanged.
+- Introduced restrained warm gold, sea-green, mint, teal and blue in addition to the core VACK violet/white typography.
+- Added blue GitHub links to verified upstream FastLoginPlus, Floodgate, Geyser, ProtocolLib and Folia. The links are in Markdown rather than SVG `img` because GitHub SVG images are not reliable clickable maps.
+- Added official GeyserMC icon copied from `GeyserMC/Geyser/core/src/main/resources/assets/geyser/icon.png` for the Floodgate/Bedrock route; **not a fabricated Mojang Bedrock logo**.
+- Added CC0 SQLite/OpenJDK visual marks from `simple-icons/simple-icons` and manually drawn minimal lock/session symbols, without AI image generation.
+- Actual browser GitHub dark/light and narrow-width visual inspection remains **NOT TESTED**.
